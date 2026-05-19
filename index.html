@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Sandeep Rajput — Digital Profile</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="app">
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-bg"></div>
+
+        <div class="hero-overlay"></div>
+
+        <!-- Only top navbar -->
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+            <div class="content-right">
+
+                <!-- <p class="hello-text">Hello, I'm</p> -->
+
+                <h1>Sandeep</h1>
+
+                <div class="role-wrapper">
+
+                    <div class="role-line"></div>
+
+                    <div>
+                        <h3>
+                            CORPORATE PSYCHOLOGIST<br>
+                            EDUCATION COUNSELOR
+                        </h3>
+                    </div>
+
+                </div>
+
+                <div class="founder">
+                    <span>FOUNDER —</span>
+                    <strong>STUDENTS ONLY CHOICE</strong>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="top-bar">
+
+            <div class="left-top">
+
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="brand">
+                    <span>DIGITAL PROFILE</span>
+                </div>
+
+            </div>
+
+            <button class="share-btn">
+                <i class="fa-solid fa-share-nodes"></i>
+                Share
+            </button>
+
+        </div>
+
+    </section>
+    <section class="quick-actions">
+
+        <a href="https://wa.me/919567958956" target="_blank" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Connect on WhatsApp
+            <span>›</span>
+        </a>
+
+        <div class="action-grid">
+
+            <a href="tel:+919567958956" class="small-btn">
+                <i class="fa-solid fa-phone"></i>
+                Call Now
+            </a>
+
+            <button class="small-btn" id="openConsultation">
+                <i class="fa-regular fa-calendar"></i>
+                Book Consultation
+            </button>
+
+        </div>
+
+    </section>
+    <!-- CONSULTATION MODAL -->
+
+    <div class="consultation-modal" id="consultationModal">
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Book Consultation</h2>
+
+            <p class="modal-subtitle">
+                Fill your details and we will connect with you shortly.
+            </p>
+
+            <form class="consultation-form" id="consultationForm">
+
+                <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required>
+
+                <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required>
+
+                <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required>
+
+                <input
+                type="date"
+                id="date"
+                required>
+
+                <input
+                type="time"
+                id="time"
+                required>
+
+                <textarea
+                rows="4"
+                id="purpose"
+                placeholder="Purpose of Consultation" required></textarea>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    Submit Consultation
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+        <!-- ABOUT ME -->
+
+    <section id="about" class="about-section">
+
+        <div class="section-title">
+
+            <i class="fa-regular fa-user"></i>
+
+            <h2>ABOUT ME</h2>
+
+        </div>
+
+        <div class="about-card">
+
+            <p>
+                As a dedicated <span>Corporate Psychologist</span> and
+                <span>Education Counselor</span>, I help students and
+                professionals achieve academic excellence, career clarity,
+                and personal growth.
+
+                Through <span>Students Only Choice</span>, I provide
+                expert guidance for college admissions in India & abroad,
+                personality development, career planning, and corporate
+                training programs designed for long-term success.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- WHAT I DO -->
+
+    <section id="services" class="services-section">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            <h2>WHAT I DO</h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <h3>
+                    College Admission
+                    India & Abroad
+                </h3>
+
+                <!-- <p>
+                    Expert guidance for top colleges
+                    and universities.
+                </p> -->
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <h3>
+                    Career
+                    Guidance
+                </h3>
+
+                <!-- <p>
+                    Career clarity and strategic
+                    future planning.
+                </p> -->
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <h3>
+                    Student Personality
+                    Development
+                </h3>
+
+                <!-- <p>
+                    Build confidence, communication,
+                    and leadership.
+                </p> -->
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+
+                <h3>
+                    Corporate
+                    Training
+                </h3>
+
+                <!-- <p>
+                    Professional training programs
+                    for growth & performance.
+                </p> -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LET'S CONNECT -->
+
+    <section id="network"  class="connect-section">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-share-nodes"></i>
+
+            <h2>LET'S CONNECT</h2>
+
+        </div>
+
+        <div class="connect-grid">
+
+        <!-- INSTAGRAM -->
+
+        <a href="https://www.instagram.com/studentsonlychoice/" target="_blank"
+        class="connect-card">
+
+            <div class="connect-left">
+
+                <div class="social-icon instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div>
+                    <h3>Instagram</h3>
+                    <p>Follow my journey</p>
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- FACEBOOK -->
+
+        <a href="https://www.facebook.com/studentsonlychoice" target="_blank"
+        class="connect-card">
+
+            <div class="connect-left">
+
+                <div class="social-icon facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <div>
+                    <h3>Facebook</h3>
+                    <p>Stay updated</p>
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- LINKEDIN -->
+
+        <a href="https://www.linkedin.com/in/sandeep-rajput-7b4590335/" target="_blank"
+        class="connect-card">
+
+            <div class="connect-left">
+
+                <div class="social-icon linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+    </div>
+    </section>
+
+    <div id="contact" class="utility-grid">
+
+        <!-- SAVE CONTACT -->
+
+        <a href="sandeep-contact.vcf"
+        download
+        class="utility-card">
+
+            <div class="utility-left">
+
+                <div class="utility-icon">
+
+                    <i class="fa-regular fa-address-card"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Save My Contact</h3>
+
+                    <p>
+                        Save my details to your phone
+                    </p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- QR CARD -->
+
+        <div class="utility-card">
+
+            <div class="utility-left">
+
+                <div class="utility-icon qr-icon">
+
+                    <i class="fa-solid fa-qrcode"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Scan & Connect</h3>
+
+                    <p>
+                        Scan QR code to save
+                        my digital profile
+                    </p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SUCCESS TOAST -->
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span>
+        Consultation Submitted Successfully
+    </span>
+
+</div>
+<!-- BOTTOM NAVBAR -->
+
+<div class="bottom-navbar">
+
+    <a href="#" class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="#services" class="nav-item">
+        <i class="fa-solid fa-grip"></i>
+        <span>Services</span>
+    </a>
+
+    <a href="#about" class="nav-item">
+        <i class="fa-regular fa-user"></i>
+        <span>About</span>
+    </a>
+
+    <a href="#network" class="nav-item">
+        <i class="fa-solid fa-user-group"></i>
+        <span>Network</span>
+    </a>
+
+    <a href="#contact" class="nav-item">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Contact</span>
+    </a>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
