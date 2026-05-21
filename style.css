@@ -1260,73 +1260,55 @@ RESPONSIVE DESIGN
         overflow: hidden;
     }
 
-    .hero-bg{
-        background-position:center top;
-        background-size:cover;
+    .hero-image{
+        height: 760px;
+    }
+
+    .hero-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        /* MAIN FIX */
+        object-position: 38% top;
     }
 
     .hero-content{
 
-        padding-top:320px;
-        padding-left:0;
+        left: 0;
+        right: 0;
 
-        width:100%;
+        width: 100%;
 
-        justify-content:flex-start;
-        align-items:flex-start;
+        padding-top: 340px;
+
+        padding-left: 28px;
+        padding-right: 28px;
+
+        box-sizing: border-box;
     }
 
-    .content-right{
-
-        width:100%;
-
-        padding:0 24px;
+    .hero-text{
+        width: 100%;
     }
 
-    .hero-content h1{
+    .hero-text h1{
 
-        font-size:64px;
+        font-size: 64px;
 
-        line-height:0.95;
+        line-height: 0.95;
+
+        margin-bottom: 20px;
     }
 
-    .hero-content h3{
+    .hero-text h3{
 
-        font-size:14px;
+        font-size: 14px;
 
-        line-height:1.5;
-    }
-
-    .founder{
-
-        font-size:13px;
-    }
-
-    .top-bar{
-
-        left:16px;
-        right:16px;
-    }
-
-    .left-top{
-
-        padding:12px 16px;
-    }
-
-    .brand span{
-
-        font-size:12px;
-    }
-
-    .share-btn{
-
-        padding:14px 18px;
-
-        font-size:15px;
+        line-height: 1.5;
     }
 
 }
-
 
 /* SMALL PHONE FIX */
 
