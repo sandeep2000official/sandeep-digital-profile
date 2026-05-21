@@ -416,10 +416,10 @@ topShareBtn.addEventListener(
     const shareData = {
 
         title:
-        "Sandeep Rajput",
+        "Sandeep",
 
         text:
-        "Connect with Sandeep Rajput",
+        "Connect with Sandeep",
 
         url:
         "https://sandeep-digital-profile.netlify.app/"
