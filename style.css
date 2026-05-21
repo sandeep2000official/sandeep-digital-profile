@@ -1256,17 +1256,16 @@ RESPONSIVE DESIGN
 @media (max-width: 768px){
 
     .hero{
-        height: 760px;
+        height: 54vh;
         overflow: hidden;
     }
 
     .hero-image{
-        height: 760px;
+        height: 54vh;
     }
 
     .hero-image img{
-        width: 100%;
-        height: 100%;
+        
         object-fit: cover;
 
         /* MAIN FIX */
@@ -1316,34 +1315,40 @@ RESPONSIVE DESIGN
 
     .hero{
 
-        height:720px;
+        height:52vh;
+    }
+
+    .hero-image img{
+
+        object-position:90% top;
     }
 
     .hero-content{
 
-        padding-top:300px;
+        padding-top:260px;
+        padding-left:210px;
     }
 
     .hero-content h1{
 
-        font-size:52px;
+        font-size:38px;
     }
 
     .hero-content h3{
 
-        font-size:11px;
+        font-size:10px;
     }
 
     .founder{
 
-        font-size:11px;
+        font-size:10px;
     }
 
     .whatsapp-btn{
 
         font-size:15px;
 
-        padding:16px;
+        padding:15px;
     }
 
     .small-btn{
