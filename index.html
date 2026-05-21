@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- OPEN GRAPH META TAGS -->
 
+    <meta property="og:title" content="Sandeep | SOC Digital Profile">
+
+    <meta property="og:description" content="Corporate Psychologist & Education Counsellor">
+
+    <meta property="og:image" content="https://sandeep-digital-profile.netlify.app/assets/images/preview-banner.png">
+
+    <meta property="og:url" content="https://sandeep-digital-profile.netlify.app/">
+
+    <meta property="og:type" content="website">
+
+    <!-- WHATSAPP / TWITTER PREVIEW -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Sandeep | SOC Digital Profile">
+
+    <meta name="twitter:description" content="Corporate Psychologist & Education Counsellor">
+
+    <meta name="twitter:image" content="https://sandeep-digital-profile.netlify.app/assets/images/preview-banner.png">
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,7 +98,7 @@
 
             </div>
 
-            <button class="share-btn">
+            <button class="share-btn top-share-btn">
                 <i class="fa-solid fa-share-nodes"></i>
                 Share
             </button>
@@ -420,7 +440,7 @@
 
         <!-- QR CARD -->
 
-        <div class="utility-card">
+        <div class="utility-card" id="openQrModal">
 
             <div class="utility-left">
 
@@ -490,6 +510,61 @@
         <i class="fa-regular fa-envelope"></i>
         <span>Contact</span>
     </a>
+
+</div>
+<!-- QR MODAL -->
+
+<div class="qr-modal" id="qrModal">
+
+    <div class="qr-box">
+
+        <!-- CLOSE -->
+
+        <button class="close-qr" id="closeQr">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- TITLE -->
+
+        <h2>Scan & Connect</h2>
+
+        <p>
+            Scan QR code to open my
+            digital profile instantly.
+        </p>
+
+        <!-- QR IMAGE -->
+
+        <div class="qr-image">
+
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://sandeep-digital-profile.netlify.app/"
+                alt="QR Code">
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="qr-actions">
+
+            <button class="qr-btn" id="downloadQrBtn">
+
+                <i class="fa-solid fa-download"></i>
+
+                Download QR
+
+            </button>
+
+            <button class="qr-btn" id="shareProfileBtn">
+
+                <i class="fa-solid fa-share-nodes"></i>
+
+                Share Profile
+
+            </button>
+
+        </div>
+
+    </div>
 
 </div>
 <script src="script.js"></script>

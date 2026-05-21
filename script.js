@@ -255,3 +255,211 @@ console.log(error);
 
 });
 });
+
+
+// =========================
+// QR MODAL
+// =========================
+
+const openQrModal =
+document.getElementById("openQrModal");
+
+const qrModal =
+document.getElementById("qrModal");
+
+const closeQr =
+document.getElementById("closeQr");
+
+
+// OPEN
+
+openQrModal.addEventListener(
+    "click",
+    () => {
+
+    qrModal.classList.add("active");
+
+});
+
+
+// CLOSE
+
+closeQr.addEventListener(
+    "click",
+    () => {
+
+    qrModal.classList.remove("active");
+
+});
+
+
+// CLOSE OUTSIDE
+
+qrModal.addEventListener(
+    "click",
+    (e) => {
+
+    if(e.target === qrModal){
+
+        qrModal.classList.remove("active");
+
+    }
+
+});
+
+// =========================
+// SHARE PROFILE
+// =========================
+
+const shareProfileBtn =
+document.getElementById("shareProfileBtn");
+
+
+shareProfileBtn.addEventListener(
+    "click",
+    async () => {
+
+    if(navigator.share){
+
+        try{
+
+            await navigator.share({
+
+                title:
+                "Sandeep Rajput",
+
+                text:
+                "Connect with Sandeep Rajput",
+
+                url:
+                "https://sandeep-digital-profile.netlify.app/"
+
+            });
+
+        }
+
+        catch(error){
+
+            console.log(error);
+
+        }
+
+    }
+
+    else{
+
+        window.open(
+
+        "https://wa.me/?text=https://sandeep-digital-profile.netlify.app/",
+
+        "_blank"
+
+        );
+
+    }
+
+});
+
+// =========================
+// DOWNLOAD QR
+// =========================
+
+const downloadQrBtn =
+document.getElementById("downloadQrBtn");
+
+
+downloadQrBtn.addEventListener(
+    "click",
+    async () => {
+
+    const qrUrl =
+    "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://sandeep-digital-profile.netlify.app/";
+
+    const response =
+    await fetch(qrUrl);
+
+    const blob =
+    await response.blob();
+
+    const blobUrl =
+    window.URL.createObjectURL(blob);
+
+    const a =
+    document.createElement("a");
+
+    a.href = blobUrl;
+
+    a.download = "sandeep-qr.png";
+
+    document.body.appendChild(a);
+
+    a.click();
+
+    a.remove();
+
+    window.URL.revokeObjectURL(blobUrl);
+
+});
+
+// =========================
+// TOP SHARE BUTTON
+// =========================
+
+const topShareBtn =
+document.querySelector(".top-share-btn");
+
+
+topShareBtn.addEventListener(
+    "click",
+    async () => {
+
+    const shareData = {
+
+        title:
+        "Sandeep Rajput",
+
+        text:
+        "Connect with Sandeep Rajput",
+
+        url:
+        "https://sandeep-digital-profile.netlify.app/"
+
+    };
+
+
+    // MOBILE SHARE
+
+    if(navigator.share){
+
+        try{
+
+            await navigator.share(
+                shareData
+            );
+
+        }
+
+        catch(error){
+
+            console.log(error);
+
+        }
+
+    }
+
+
+    // DESKTOP FALLBACK
+
+    else{
+
+        navigator.clipboard.writeText(
+            shareData.url
+        );
+
+        alert(
+            "Profile link copied!"
+        );
+
+    }
+
+});
