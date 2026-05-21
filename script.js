@@ -422,7 +422,7 @@ topShareBtn.addEventListener(
         "Connect with Sandeep",
 
         url:
-        "https://sandeep-digital-profile.netlify.app/"
+        "https://sandeep-digital-profile.netlify.app/?v=2ho"
 
     };
 
