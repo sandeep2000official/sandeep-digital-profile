@@ -1253,23 +1253,27 @@ QR MODAL
 RESPONSIVE DESIGN
 =================================== */
 
-@media (max-width: 768px){
+/* ===================================
+TABLET
+=================================== */
+
+@media (max-width: 992px){
 
     .hero{
-        height: 54vh;
+        min-height: 100vh;
         overflow: hidden;
     }
 
     .hero-image{
-        height: 54vh;
+        height: 100vh;
     }
 
     .hero-image img{
-        
+        width: 100%;
+        height: 100%;
         object-fit: cover;
 
-        /* MAIN FIX */
-        object-position: 38% top;
+        object-position: center top;
     }
 
     .hero-content{
@@ -1279,25 +1283,78 @@ RESPONSIVE DESIGN
 
         width: 100%;
 
-        padding-top: 340px;
+        padding: 0 40px;
 
-        padding-left: 28px;
-        padding-right: 28px;
+        box-sizing: border-box;
+    }
+
+    .hero-text h1{
+
+        font-size: 72px;
+    }
+
+}
+
+
+/* ===================================
+MOBILE
+=================================== */
+
+@media (max-width: 768px){
+
+    .hero{
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero-image{
+        height: 100vh;
+    }
+
+    .hero-image img{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        /* MAIN MOBILE ALIGNMENT */
+        object-position: 38% top;
+    }
+
+    .top-bar{
+
+        top: 18px;
+
+        padding: 0 18px;
+    }
+
+    .hero-content{
+
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 120px;
+
+        width: 100%;
+
+        padding: 0 28px;
 
         box-sizing: border-box;
     }
 
     .hero-text{
+
         width: 100%;
     }
 
     .hero-text h1{
 
-        font-size: 64px;
+        font-size: 58px;
 
         line-height: 0.95;
 
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
 
     .hero-text h3{
@@ -1307,155 +1364,103 @@ RESPONSIVE DESIGN
         line-height: 1.5;
     }
 
+    .founder{
+
+        font-size: 13px;
+    }
+
 }
 
-/* SMALL PHONE FIX */
+
+/* ===================================
+SMALL MOBILE
+=================================== */
 
 @media (max-width: 480px){
 
-    .hero{
-
-        height:52vh;
-    }
-
     .hero-image img{
 
-        object-position:90% top;
+        object-position: 36% top;
     }
 
     .hero-content{
 
-        padding-top:260px;
-        padding-left:210px;
+        bottom: 110px;
+
+        padding: 0 24px;
     }
 
-    .hero-content h1{
+    .hero-text h1{
 
-        font-size:38px;
+        font-size: 50px;
     }
 
-    .hero-content h3{
+    .hero-text h3{
 
-        font-size:10px;
+        font-size: 12px;
     }
 
     .founder{
 
-        font-size:10px;
+        font-size: 11px;
     }
 
     .whatsapp-btn{
 
-        font-size:15px;
+        font-size: 15px;
 
-        padding:15px;
+        padding: 16px;
     }
 
     .small-btn{
 
-        font-size:14px;
+        font-size: 14px;
     }
 
 }
 
 
-/* EXTRA SMALL DEVICES */
+/* ===================================
+EXTRA SMALL DEVICES
+=================================== */
 
-@media (max-width: 395px){
-
-    .hero{
-
-        height:53vh;
-    }
+@media (max-width: 380px){
 
     .hero-image img{
 
-        object-position:90% top;
+        object-position: 34% top;
     }
 
     .hero-content{
 
-        padding-top:220px;
-        padding-left:200px;
+        bottom: 100px;
     }
 
-    .hero-content h1{
+    .hero-text h1{
 
-        font-size:38px;
+        font-size: 44px;
     }
 
-    .hero-content h3{
+    .services-grid{
 
-        font-size:10px;
+        gap: 6px;
     }
 
-    .founder{
+    .service-card{
 
-        font-size:10px;
+        min-height: 135px;
+
+        padding: 10px 6px;
     }
 
-    .whatsapp-btn{
+    .connect-grid{
 
-        font-size:15px;
-
-        padding:15px;
+        gap: 8px;
     }
 
-    .small-btn{
+    .utility-grid{
 
-        font-size:14px;
-    }
-
-}
-
-
-
-
-/* EXTRA SMALL DEVICES */
-@media (max-width: 376px){
-
-    .hero{
-
-        height:64vh;
-    }
-
-    .hero-image img{
-
-        object-position:38% 100px;
-
-    }
-
-    .hero-content{
-
-        padding-top:210px;
-        padding-left:195px;
-    }
-
-    .hero-content h1{
-
-        font-size:38px;
-    }
-
-    .hero-content h3{
-
-        font-size:10px;
-    }
-
-    .founder{
-
-        font-size:10px;
-    }
-
-    .whatsapp-btn{
-
-        font-size:15px;
-
-        padding:15px;
-    }
-
-    .small-btn{
-
-        font-size:14px;
+        gap: 8px;
     }
 
 }
