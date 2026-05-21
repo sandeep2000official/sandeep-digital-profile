@@ -1361,38 +1361,101 @@ RESPONSIVE DESIGN
 
 /* EXTRA SMALL DEVICES */
 
-@media (max-width: 380px){
+@media (max-width: 395px){
+
+    .hero{
+
+        height:53vh;
+    }
+
+    .hero-image img{
+
+        object-position:90% top;
+    }
 
     .hero-content{
 
-        padding-top:280px;
+        padding-top:220px;
+        padding-left:200px;
     }
 
     .hero-content h1{
 
-        font-size:44px;
+        font-size:38px;
     }
 
-    .services-grid{
+    .hero-content h3{
 
-        gap:6px;
+        font-size:10px;
     }
 
-    .service-card{
+    .founder{
 
-        min-height:135px;
-
-        padding:10px 6px;
+        font-size:10px;
     }
 
-    .connect-grid{
+    .whatsapp-btn{
 
-        gap:8px;
+        font-size:15px;
+
+        padding:15px;
     }
 
-    .utility-grid{
+    .small-btn{
 
-        gap:8px;
+        font-size:14px;
+    }
+
+}
+
+
+
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 376px){
+
+    .hero{
+
+        height:64vh;
+    }
+
+    .hero-image img{
+
+        object-position:38% 100px;
+
+    }
+
+    .hero-content{
+
+        padding-top:210px;
+        padding-left:195px;
+    }
+
+    .hero-content h1{
+
+        font-size:38px;
+    }
+
+    .hero-content h3{
+
+        font-size:10px;
+    }
+
+    .founder{
+
+        font-size:10px;
+    }
+
+    .whatsapp-btn{
+
+        font-size:15px;
+
+        padding:15px;
+    }
+
+    .small-btn{
+
+        font-size:14px;
     }
 
 }
