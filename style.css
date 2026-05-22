@@ -367,7 +367,9 @@ body{
 .modal-box{
     width:100%;
     max-width:360px;
-
+    max-height: 90vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background:
     linear-gradient(
         180deg,
@@ -1286,7 +1288,17 @@ RESPONSIVE DESIGN
 
         box-sizing: border-box;
     }
+    .consultation-modal{
 
+        align-items:flex-start;
+
+        padding-top:30px;
+    }
+
+    .modal-box{
+
+        max-height:85vh;
+    }
     .hero-text{
         width: 100%;
     }
@@ -1322,7 +1334,17 @@ RESPONSIVE DESIGN
 
         object-position:90% top;
     }
+    .consultation-modal{
 
+        align-items:flex-start;
+
+        padding-top:30px;
+    }
+
+    .modal-box{
+
+        max-height:85vh;
+    }
     .hero-content{
 
         padding-top:260px;
@@ -1375,6 +1397,17 @@ RESPONSIVE DESIGN
     .hero{
 
         height:53vh;
+    }
+    .consultation-modal{
+
+        align-items:flex-start;
+
+        padding-top:30px;
+    }
+
+    .modal-box{
+
+        max-height:85vh;
     }
 
     .hero-image img{
@@ -1439,7 +1472,17 @@ RESPONSIVE DESIGN
 
         object-position:90% top;
     }
+    .consultation-modal{
 
+        align-items:flex-start;
+
+        padding-top:30px;
+    }
+
+    .modal-box{
+
+        max-height:85vh;
+    }
     .hero-content{
 
         padding-top:220px;
@@ -1501,7 +1544,17 @@ RESPONSIVE DESIGN
         object-position:38% 100px;
 
     }
+    .consultation-modal{
 
+        align-items:flex-start;
+
+        padding-top:30px;
+    }
+
+    .modal-box{
+
+        max-height:85vh;
+    }
     .hero-content{
 
         padding-top:210px;
@@ -1559,6 +1612,17 @@ RESPONSIVE DESIGN
 
         object-position:38% 100px;
 
+    }
+    .consultation-modal{
+
+        align-items:flex-start;
+
+        padding-top:30px;
+    }
+
+    .modal-box{
+
+        max-height:85vh;
     }
 
     .hero-content{
